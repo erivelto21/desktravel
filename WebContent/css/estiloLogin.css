@@ -1,0 +1,84 @@
+body{
+	background-image: linear-gradient(to left, #74cbdb, #3ea1bc);	
+/* 	background-color: #74cbdb; */
+}
+
+legend{
+	color: white;
+}
+
+fieldset {
+	height: 250px;
+	background-color: #29aace;
+	background-image: url("viagem.jpg");
+	width: 35%;
+	margin-left: 32%;
+}
+
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+input{
+	margin-left: 12%;	
+}
+
+input[type=text] {
+	margin-top:10%;
+	width: 300px;
+	height : 30px;
+ 	border: 2px solid;
+    border-radius: 4px;
+    margin-bottom: 3%;
+}
+
+input[type=password] {
+	width: 300px;
+	height : 30px;
+	border: 2px solid;
+    border-radius: 4px;
+    margin-bottom: 8%;
+}
+
+button{
+	border: 2px solid black;
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: white;
+	cursor: pointer;
+	display: inline-block;
+	margin-left: 5%;
+}
+
+input[type=submit]{
+	border: 2px solid black;
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+	background-color: white;
+	cursor: pointer;
+	display: inline-block;
+	
+}
+
+form{
+	margin-bottom: 6%;	
+/* 	margin-top : 10%; */
+}
+
+#head{
+	height: 130px;
+	background-color: #38ddff;
+	margin-bottom: 5%;
+}
+
+#btn{
+
+}
+
+#footer{
+	height: 90px;
+/* 	background-color: #38ddff; */
+}

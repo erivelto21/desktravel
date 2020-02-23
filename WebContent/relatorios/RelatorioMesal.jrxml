@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-05-16T21:22:09 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="RelatorioMesal" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="f83402d1-b953-4be5-9f2b-f4b0da7f0d79">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="dT"/>
+	<queryString language="SQL">
+		<![CDATA[select  * from viagem join usuario on (viagem.usuario_id = usuario.id) and viagem.aprovacao = true and viagem.pendente = true]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="usuario_id" class="java.lang.Integer"/>
+	<field name="duracao" class="java.lang.Integer"/>
+	<field name="custo_id" class="java.lang.Integer"/>
+	<field name="endereco_id" class="java.lang.Integer"/>
+	<field name="aprovacao" class="java.lang.Boolean"/>
+	<field name="pendente" class="java.lang.Boolean"/>
+	<field name="dataSaida" class="java.sql.Date"/>
+	<field name="dataVolta" class="java.sql.Date"/>
+	<field name="custoR_id" class="java.lang.Integer"/>
+	<field name="COLUMN_11" class="java.lang.Integer"/>
+	<field name="login" class="java.lang.String"/>
+	<field name="senha" class="java.lang.String"/>
+	<field name="tipo" class="java.lang.Integer"/>
+	<field name="cod_funcionario" class="java.lang.Integer"/>
+	<field name="id_superior" class="java.lang.Integer"/>
+	<field name="nome" class="java.lang.String"/>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+		<groupHeader>
+			<band height="48"/>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group2">
+		<groupExpression><![CDATA[$F{usuario_id}]]></groupExpression>
+		<groupHeader>
+			<band height="38">
+				<staticText>
+					<reportElement x="0" y="0" width="80" height="24" uuid="14793941-40d1-40f4-82c3-60ca931b0649"/>
+					<text><![CDATA[Funcionario]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="80" y="0" width="90" height="24" uuid="452ef75a-ebe7-42e3-b5b9-e98b2f54ce24"/>
+					<text><![CDATA[Cidade]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="170" y="0" width="90" height="24" uuid="e0f4cb66-f85d-4bf2-9a95-d8d0a8549133"/>
+					<text><![CDATA[Custo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="260" y="0" width="100" height="24" uuid="531102c6-ea46-4c4a-91c9-c9c022191228"/>
+					<text><![CDATA[data]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group3">
+		<groupExpression><![CDATA[$F{duracao}]]></groupExpression>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="Group4">
+		<groupExpression><![CDATA[$F{custo_id}]]></groupExpression>
+		<groupFooter>
+			<band/>
+		</groupFooter>
+	</group>
+	<group name="endereco_id">
+		<groupExpression><![CDATA[$F{endereco_id}]]></groupExpression>
+	</group>
+	<group name="aprovacao">
+		<groupExpression><![CDATA[$F{aprovacao}]]></groupExpression>
+	</group>
+	<group name="pendente">
+		<groupExpression><![CDATA[$F{pendente}]]></groupExpression>
+	</group>
+	<group name="dataSaida">
+		<groupExpression><![CDATA[$F{dataSaida}]]></groupExpression>
+	</group>
+	<group name="dataVolta">
+		<groupExpression><![CDATA[$F{dataVolta}]]></groupExpression>
+	</group>
+	<group name="custoR_id">
+		<groupExpression><![CDATA[$F{custoR_id}]]></groupExpression>
+	</group>
+	<group name="COLUMN_11">
+		<groupExpression><![CDATA[$F{COLUMN_11}]]></groupExpression>
+	</group>
+	<group name="login">
+		<groupExpression><![CDATA[$F{login}]]></groupExpression>
+	</group>
+	<group name="senha">
+		<groupExpression><![CDATA[$F{senha}]]></groupExpression>
+	</group>
+	<group name="tipo">
+		<groupExpression><![CDATA[$F{tipo}]]></groupExpression>
+	</group>
+	<group name="cod_funcionario">
+		<groupExpression><![CDATA[$F{cod_funcionario}]]></groupExpression>
+	</group>
+	<group name="id_superior">
+		<groupExpression><![CDATA[$F{id_superior}]]></groupExpression>
+	</group>
+	<group name="nome">
+		<groupExpression><![CDATA[$F{nome}]]></groupExpression>
+	</group>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#006699" uuid="19a1daed-d24c-4cdd-b297-525ff142ec72"/>
+				<staticText>
+					<reportElement x="20" y="20" width="570" height="43" forecolor="#FFFFFF" uuid="5019060a-d925-4e88-958e-c9234d9bb7c3"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Relatorio mensal do mes de maio]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="21">
+			<line>
+				<reportElement x="-20" y="20" width="595" height="1" forecolor="#666666" uuid="0d0db06b-06bf-43bf-829b-c7a9af34ced9"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="42">
+			<textField>
+				<reportElement x="0" y="-10" width="80" height="20" uuid="35d2c967-e2a6-43fd-bffb-b1f651b54ef2"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="-47" y="4" width="100" height="30" uuid="8a4b0909-2a22-45f3-8ce0-947204b20283"/>
+				<text><![CDATA[nome]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="-10" width="90" height="20" uuid="87687c2d-94b5-45cb-a43d-4b78bbb6b88f"/>
+				<textFieldExpression><![CDATA[$F{endereco_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="170" y="-14" width="80" height="18" uuid="8839f113-68de-4f45-8eb8-86d588524876"/>
+				<textFieldExpression><![CDATA[$F{custo_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="260" y="-14" width="100" height="30" uuid="13e6eb4d-b664-4847-a3cc-5b7aa9caf66e"/>
+				<textFieldExpression><![CDATA[$F{dataSaida}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band/>
+	</columnFooter>
+	<pageFooter>
+		<band/>
+	</pageFooter>
+	<summary>
+		<band/>
+	</summary>
+</jasperReport>

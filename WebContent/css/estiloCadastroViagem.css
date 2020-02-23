@@ -1,0 +1,19 @@
+body{
+	background-image: linear-gradient(to left, #74cbdb, #3ea1bc);		
+}
+
+nav{
+	margin-left: 0.2%;
+	width: 99.6%;
+}
+
+fieldset {
+	width: 96%;
+	margin-left: 3%; 
+}
+
+form{
+	margin-top : 3%;
+	margin-left: 3%;
+	width: 94%;
+}
